@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Process Service</title>
+</head>
+<body>
+<h1>Welcome to the Image Process Service</h1>
+<h2>Please choose the settings</h2>
+
+<form action="/index/data" method="post">
+    <div><h3>Please set the desired width of the output (Not Compulsory)</h3>
+        <p>
+
+            <p>Image Width: <input type="text" name="width" /></p>
+
+        </p></div>
+
+    <div><h3>Please set the desired height of the output (Not Compulsory)</h3>
+        <p>
+
+            <p>Image height: <input type="text" name="height" /></p>
+
+        </p></div>
+
+
+    <div><h3>Please choose the desired output format of the image</h3>
+        <p>
+
+            <input type="radio" name="format" value="auto"> auto
+            <input type="radio" name="format" value="jpg"> jpg
+            <input type="radio" name="format" value="png"> png
+            <input type="radio" name="format" value="input"> as input
+        </p></div>
+    <div><h3>Please choose the desired quality of the output (0-100, We recommend 75-90)</h3>
+        <p>
+
+            <p>Image Quality: <input type="text" name="quality" /></p>
+
+        </p></div>
+    <div><h3>Please enter the url of the image</h3>
+        <p>
+            <p>Image url: <input type="text" name="url" /></p>
+            <div><input type="submit"></div>
+        </p></div>
+</form>
+
+<div><footer>
+    <p>Powered by Flyimg</p>
+    <p>Designed by MssZ</p>
+</footer></div>
+
+</body>
+</html>
